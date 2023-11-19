@@ -1,0 +1,63 @@
+[{
+    "name": "Sam Altman",
+    "risk": "Medium",
+    "trigger": "IP Change",
+    "inQueue": "4 days",
+    "addedOn": "12 Oct, 2023",
+    "confirmed": true,
+    "email": "samaltman123@gmail.com",
+    "reviewDate": "23 Aug, 2023",
+    "reviewStatus":"yes"
+  },
+  {
+    "name": "Sameer Choubey",
+    "risk": "High",
+    "trigger": "FIFO",
+    "inQueue": "4 days",
+    "addedOn": "12 Oct, 2023",
+    "confirmed": false,
+    "email": "sameerchoubey123@gmail.com"
+  },
+  {
+    "name": "Adarsh Panikkar",
+    "risk": "Low",
+    "trigger": "IP Change",
+    "inQueue": "5 days",
+    "addedOn": "12 Oct, 2023",
+    "confirmed": false,
+    "email": "adarsh@onjuno.com"
+  },
+  {
+    "name": "Pratik Shetty",
+    "risk": "High",
+    "trigger": "FIFO",
+    "inQueue": "5 days",
+    "addedOn": "12 Oct, 2023",
+    "confirmed": true,
+    "email": "pratik3@gmail.com",
+    "reviewDate": "12 Sep, 2023",
+    "reviewStatus": "yes"
+  },
+  {
+    "name": "Elon Musk",
+    "risk": "Low",
+    "trigger": "FIFO",
+    "inQueue": "5 days",
+    "addedOn": "12 Oct, 2023",
+    "confirmed": true,
+    "email": "elon@twitterceo.com",
+    "reviewDate": "12 Sep, 2023",
+    "reviewStatus": "yes"
+  },
+  {
+    "name": "Trina Kundu",
+    "risk": "Low",
+    "trigger": "FIFO",
+    "inQueue": "5 days",
+    "addedOn": "12 Oct, 2023",
+    "confirmed": true,
+    "email": "trina@onjuno.com",
+    "reviewDate": "12 Sep, 2023"
+  }
+
+]
