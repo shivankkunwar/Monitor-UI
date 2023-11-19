@@ -18,6 +18,4 @@ UI for a Monitoring dashboard
 - JS
 - HTML
 - CSS
-```bash
-npm install my-project
-cd my-project
+
