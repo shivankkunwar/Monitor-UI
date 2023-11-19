@@ -1,21 +1,25 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Modal from "./component/Modal/Modal";
 import Sidebar from "./component/Sidebar";
 import Dropdowns from "./component/Dropdowns";
 import PendingTable from "./component/Tables/PendingTable";
-import CompletedTable from "./component/Tables/CompletedTable"
+import CompletedTable from "./component/Tables/CompletedTable";
+
 import "./App.css";
 
 function App() {
-  const [searchResult, setSearchResult]=useState('');
-  const [activeTab, setActiveTab] = useState('pending');
+  const [searchResult, setSearchResult] = useState("");
+  const [activeTab, setActiveTab] = useState("pending");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  function changeTab(tab){
+  function changeTab(tab) {
     setActiveTab(tab);
-    setSearchResult('');
+    setSearchResult("");
   }
-  
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <div className="container-main">
       <Sidebar />
@@ -23,10 +27,24 @@ function App() {
         <div className="monitoring-title">Monitoring</div>
         <div className="tabs-close">
           <div className="tabs">
-            <div className={`pending ${activeTab==='pending'?'active':'not'}`} onClick={()=>changeTab('pending')} >Pending</div>
-            <div className={`completed ${activeTab==='completed'?'active':'not'}`}onClick={()=>changeTab('completed')}>Completed</div>
+            <div
+              className={`pending ${
+                activeTab === "pending" ? "active" : "not"
+              }`}
+              onClick={() => changeTab("pending")}
+            >
+              Pending
+            </div>
+            <div
+              className={`completed ${
+                activeTab === "completed" ? "active" : "not"
+              }`}
+              onClick={() => changeTab("completed")}
+            >
+              Completed
+            </div>
           </div>
-          <div className="close-button">
+          <div className="close-button" onClick={toggleModal}>
             <svg
               width="18"
               height="18"
@@ -63,6 +81,7 @@ function App() {
             Close account
           </div>
         </div>
+
         <div className="search-filter">
           <div className="search-bar">
             <svg
@@ -85,23 +104,28 @@ function App() {
                 fill="#ADADAD"
               />
             </svg>
-            <input placeholder="Search" value={searchResult}style={{ border: "none" }} onChange={(e)=>setSearchResult(e.target.value)}/>
+            <input
+              placeholder="Search"
+              value={searchResult}
+              style={{ border: "none" }}
+              onChange={(e) => setSearchResult(e.target.value)}
+            />
           </div>
           <div className="filter-drop">
-            <Dropdowns/>
+            <Dropdowns />
           </div>
         </div>
         <div className="content-table">
-          {
-
-            activeTab==='pending'?
-            <PendingTable searchResult={searchResult}/>
-            :
-            <CompletedTable searchResult={searchResult}/>
-          }
-          
+          {activeTab === "pending" ? (
+            <PendingTable searchResult={searchResult} />
+          ) : (
+            <CompletedTable searchResult={searchResult} />
+          )}
         </div>
       </div>
+      {isModalOpen && (
+        <Modal toggleModal={toggleModal}/>
+      )}
     </div>
   );
 }
