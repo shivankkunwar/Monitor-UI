@@ -7,7 +7,7 @@
     "confirmed": true,
     "email": "samaltman123@gmail.com",
     "reviewDate": "23 Aug, 2023",
-    "reviewStatus":"yes"
+    "reviewStatus":"Yes"
   },
   {
     "name": "Sameer Choubey",
@@ -16,7 +16,8 @@
     "inQueue": "4 days",
     "addedOn": "12 Oct, 2023",
     "confirmed": false,
-    "email": "sameerchoubey123@gmail.com"
+    "email": "sameerchoubey123@gmail.com",
+    "reviewStatus":"No"
   },
   {
     "name": "Adarsh Panikkar",
@@ -25,7 +26,8 @@
     "inQueue": "5 days",
     "addedOn": "12 Oct, 2023",
     "confirmed": false,
-    "email": "adarsh@onjuno.com"
+    "email": "adarsh@onjuno.com",
+    "reviewStatus":"No"
   },
   {
     "name": "Pratik Shetty",
@@ -36,7 +38,7 @@
     "confirmed": true,
     "email": "pratik3@gmail.com",
     "reviewDate": "12 Sep, 2023",
-    "reviewStatus": "yes"
+    "reviewStatus": "Yes"
   },
   {
     "name": "Elon Musk",
@@ -47,7 +49,7 @@
     "confirmed": true,
     "email": "elon@twitterceo.com",
     "reviewDate": "12 Sep, 2023",
-    "reviewStatus": "yes"
+     "reviewStatus":"yes"
   },
   {
     "name": "Trina Kundu",
@@ -57,7 +59,8 @@
     "addedOn": "12 Oct, 2023",
     "confirmed": true,
     "email": "trina@onjuno.com",
-    "reviewDate": "12 Sep, 2023"
+    "reviewDate": "12 Sep, 2023",
+    "reviewStatus":"yes"
   }
 
 ]

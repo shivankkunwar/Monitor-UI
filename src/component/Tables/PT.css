@@ -1,0 +1,95 @@
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 20px;
+}
+thead {
+  background-color: #F9FAFB;
+  border-bottom: 2px solid #E5E7EB;
+  text-align: left;
+}
+th {
+  padding: 0.5rem ;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: left;
+  
+}
+
+th:nth-child(1) {
+  width: 25%;
+}
+th:nth-child(3),th:nth-child(2) {
+  width: 14%;
+}
+th:nth-child(4), th:nth-child(5){
+    width: 16%;
+}
+th:nth-child(6){
+    width: 18%;
+}
+tbody tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+tbody tr:nth-child(odd) {
+  background-color: #F9FAFB;
+}
+
+ td {
+  padding: 0.9rem;
+  font-size: 14px;
+  color: #4B5563;
+}
+tbody tr{
+    border: 1px solid #E4E4E4;
+   
+ }
+ tbody tr td{
+    background-color:#FFFFFF ;
+ }
+.medium{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: #88670F;
+
+}
+.medium-circle{
+width: 0.625rem;
+height: 0.625rem;
+background-color: #88670F;
+border-radius: 100%;
+
+
+}
+.High{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: #7D2424;
+
+}
+.High-circle{
+width: 0.625rem;
+height: 0.625rem;
+background-color: #7D2424;
+border-radius: 100%;
+
+
+}
+.Low{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: #006540;
+
+}
+.Low-circle{
+width: 0.625rem;
+height: 0.625rem;
+background-color: #006540;
+border-radius: 100%;
+
+
+}
