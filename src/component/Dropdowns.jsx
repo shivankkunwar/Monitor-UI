@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./dd.css";
 function Dropdowns() {
-  const [drop1, setDrop1] = useState(true);
+  const [drop1, setDrop1] = useState(false);
   const [drop2, setDrop2] = useState(false);
 
   function dropp(number) {

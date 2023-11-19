@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Sidebar from "./component/Sidebar";
-import Dropdowns from "./component/dropdowns";
+import Dropdowns from "./component/Dropdowns";
 import PendingTable from "./component/Tables/PendingTable";
 import CompletedTable from "./component/Tables/CompletedTable"
 import "./App.css";
