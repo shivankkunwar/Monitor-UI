@@ -1,0 +1,66 @@
+ [
+      {
+        "name": "Sam Altman",
+        "email": "samaltman123@gmail.com",
+        "risk_level": "Medium",
+        "time_to_close": "14 days",
+        "status": "Flagged",
+        "addedOn": "12 Oct, 2023",
+        "action_taken_by": "Neil",
+        "action_taken_by_email": "niel@onjuno.com"
+      },
+      
+      {
+        "name": "Rasleen Kaur",
+        "email": "rasleen@onjuno.com",
+        "risk_level": "High",
+        "time_to_close": "Flagged",
+        "status": "15 days",
+        "addedOn": "12 Oct, 2023",
+        "action_taken_by": "Prashant",
+        "action_taken_by_email": "prashant@onjuno.com"
+      },
+      
+      {
+        "name": "Trina Kundu",
+        "email": "trins@onjun.com",
+        "risk_level": "Low",
+        "time_to_close": "Closed",
+        "status": "15 days",
+        "addedOn": "12 Oct, 2023",
+        "action_taken_by": "Pratik Shetty",
+        "action_taken_by_email": "pratik@onjuno.com"
+      }
+      ,
+        {
+          "name": "John Doe",
+          "email": "johndoe123@gmail.com",
+          "risk_level": "High",
+          "time_to_close": "10 days",
+          "status": "Flagged",
+          "addedOn": "15 Oct, 2023",
+          "action_taken_by": "Jane Smith",
+          "action_taken_by_email": "jane@onjuno.com"
+        },
+        {
+          "name": "Alice Johnson",
+          "email": "alicejohnson@onjuno.com",
+          "risk_level": "Low",
+          "time_to_close": "Closed",
+          "status": "20 days",
+          "addedOn": "16 Oct, 2023",
+          "action_taken_by": "Bob Williams",
+          "action_taken_by_email": "bob@onjuno.com"
+        },
+        {
+          "name": "Charlie Brown",
+          "email": "charliebrown@onjuno.com",
+          "risk_level": "Medium",
+          "time_to_close": "Flagged",
+          "status": "18 days",
+          "addedOn": "17 Oct, 2023",
+          "action_taken_by": "Lucy Van Pelt",
+          "action_taken_by_email": "lucy@onjuno.com"
+        }
+      ]
+      

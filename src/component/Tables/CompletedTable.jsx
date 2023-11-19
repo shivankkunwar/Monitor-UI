@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import data from "../../data/data.json";
+import data from "../../data/data2.json";
 import "./PT.css";
 function CompletedTable({searchResult}) {
   console.log(searchResult)
@@ -164,12 +164,12 @@ useEffect(() => {
                 </svg>
               </td>
               <td>
-                {curr.risk === "Medium" ? (
+                {curr.risk_level === "Medium" ? (
                   <div className="medium">
                     <div className="medium-circle"></div>
                     Medium
                   </div>
-                ) : curr.risk === "High" ? (
+                ) : curr.risk_level === "High" ? (
                   <div className="High">
                     <div className="High-circle"></div>
                     High
@@ -188,7 +188,7 @@ useEffect(() => {
                   fontWeight: "600",
                 }}
               >
-                {curr.trigger}
+                {curr.status}
               </td>
               <td
                 style={{
@@ -197,7 +197,7 @@ useEffect(() => {
                   fontWeight: "600",
                 }}
               >
-                {curr.inQueue}
+                {curr.time_to_close}
               </td>
               <td>{curr.addedOn}</td>
               <td>
@@ -210,9 +210,9 @@ useEffect(() => {
                       fontWeight: "600",
                     }}
                   >
-                    {curr.reviewStatus}
+                    {curr.action_taken_by}
                   </div>
-                  <div className="reviewDate">{curr.reviewDate}</div>
+                  <div className="reviewDate">{curr.action_taken_by_email}</div>
                 </div>
               </td>
             </tr>
