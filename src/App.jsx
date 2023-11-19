@@ -4,9 +4,18 @@ import viteLogo from "/vite.svg";
 import Sidebar from "./component/Sidebar";
 import Dropdowns from "./component/dropdowns";
 import PendingTable from "./component/Tables/PendingTable";
+import CompletedTable from "./component/Tables/CompletedTable"
 import "./App.css";
 
 function App() {
+  const [searchResult, setSearchResult]=useState('');
+  const [activeTab, setActiveTab] = useState('pending');
+
+  function changeTab(tab){
+    setActiveTab(tab);
+    setSearchResult('');
+  }
+  
   return (
     <div className="container-main">
       <Sidebar />
@@ -14,8 +23,8 @@ function App() {
         <div className="monitoring-title">Monitoring</div>
         <div className="tabs-close">
           <div className="tabs">
-            <div className={`pending active`}>Pending</div>
-            <div className="completed">Completed</div>
+            <div className={`pending ${activeTab==='pending'?'active':'not'}`} onClick={()=>changeTab('pending')} >Pending</div>
+            <div className={`completed ${activeTab==='completed'?'active':'not'}`}onClick={()=>changeTab('completed')}>Completed</div>
           </div>
           <div className="close-button">
             <svg
@@ -76,14 +85,21 @@ function App() {
                 fill="#ADADAD"
               />
             </svg>
-            <input placeholder="Search" style={{ border: "none" }} />
+            <input placeholder="Search" value={searchResult}style={{ border: "none" }} onChange={(e)=>setSearchResult(e.target.value)}/>
           </div>
           <div className="filter-drop">
             <Dropdowns/>
           </div>
         </div>
         <div className="content-table">
-          <PendingTable />
+          {
+
+            activeTab==='pending'?
+            <PendingTable searchResult={searchResult}/>
+            :
+            <CompletedTable searchResult={searchResult}/>
+          }
+          
         </div>
       </div>
     </div>

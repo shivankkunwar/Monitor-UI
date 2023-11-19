@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import data from "../../data/data.json";
 import "./PT.css";
-function PendingTable({searchResult}) {
+function CompletedTable({searchResult}) {
   console.log(searchResult)
   const [filteredResult, setFilteredResult]= useState(data);
 
@@ -50,7 +50,7 @@ useEffect(() => {
               </svg>
             </div>
           </th>
-          <th>Trigger reason</th>
+          <th>Action reason</th>
           <th>
             <div
               style={{
@@ -61,7 +61,7 @@ useEffect(() => {
               
               }}
             >
-              In queue for{" "}
+             Time to close{" "}
               <svg
                 width="18"
                 height="18"
@@ -115,7 +115,7 @@ useEffect(() => {
               </svg>
             </div>
           </th>
-          <th>Previously reviewed</th>
+          <th>Action taken by</th>
         </tr>
       </thead>
       <tbody>
@@ -223,4 +223,4 @@ useEffect(() => {
   );
 }
 
-export default PendingTable;
+export default CompletedTable;

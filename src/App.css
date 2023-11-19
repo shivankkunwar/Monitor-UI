@@ -1,6 +1,5 @@
 *{
   font-family: "Lettera Text LL", sans-serif;
-  
 }
 .container-main{
   display: flex;
@@ -74,7 +73,7 @@
 .content-right{
   display: flex;
   flex-direction: column;
-  padding: 2rem 2rem 0 2rem;
+  padding: 1rem 2rem 0 2rem;
   height: calc(100vh - 2 * 1.5rem);
 }
 .content-right .monitoring-title{
@@ -152,6 +151,12 @@ border-radius: 0.5625rem 0.5rem 0.5rem 0.5625rem;
 
 border: 1px solid var(--stroke-primary, #E4E4E4);
 background: var(--background-default, #FFF);
+
+}
+.search-bar input {
+ 
+  width: 20.125rem;
+  height: 1.5rem;
 }
 .search-bar input:focus{
   outline: none;
