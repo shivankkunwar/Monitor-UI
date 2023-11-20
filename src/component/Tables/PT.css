@@ -1,6 +1,7 @@
 .content-table{
     max-height: 61vh;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 table {
   width: 100%;

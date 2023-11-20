@@ -70,6 +70,7 @@
   color: #777676;
 }
 
+
 .content-right{
   display: flex;
   flex-direction: column;
@@ -113,10 +114,12 @@
 }
 .tabs{
   align-items: flex-end;
+  gap: 0.7rem;
 }
 .tabs-close{
   display: flex;
   height: 10vh;
+  
 
  
 }
@@ -183,4 +186,33 @@ background: var(--background-default, #FFF);
   position: relative;
   
   background: white;
+}
+
+@media (max-width: 900px){
+  .bottom-sidebar .details-email{
+    display: none;
+  }
+}
+@media (max-width: 730px){
+  .tabs{
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 740px) {
+  .top-sidebar-menu-bars{
+    width: 16vw;
+    height: 40vh;
+   
+    margin: 0.5rem 1rem;
+    
+  }
+  .top-sidebar-menu-bars .menu{
+    font-size: 0.8rem;
+    height: 5vh;
+    color: #777676;
+    margin: 0.2rem 0;
+    padding: 0.5rem 0.5rem;
+    font-weight: 550;
+    
+  }
 }
