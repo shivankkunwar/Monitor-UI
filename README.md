@@ -1,8 +1,21 @@
-# React + Vite
+# Monitor UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+UI for a Monitoring dashboard 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Functionalities
+- Sidebar with multiple routes
+- Dynamically operations Tabs - Pending- complete
+- Search bar
+- A table displaying data according to search result
+- close button- when clicked pops up a Modal form
+- a JSON file to populate data
+-  features like search, filtering, and dynamic data adjustments when switching tabs (between "Pending" and "Completed") etc are fully operational.
+
+## Technologies
+- React
+- JS
+- HTML
+- CSS
+
